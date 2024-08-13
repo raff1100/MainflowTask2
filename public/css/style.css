@@ -1,0 +1,83 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Header and Navigation Bar */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+header .logo {
+    width: 80px;
+    height: auto;
+    margin-right: auto;
+}
+
+header .navbar {
+    display: flex;
+    gap: 20px;
+}
+
+header .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header .navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    margin-top: 100px; /* To avoid overlap with the fixed header */
+    padding: 20px;
+    color: white;
+}
+
+/* Background Images */
+.home-background {
+    background-image: url('/images/cafe-home.jpg');
+    background-size: cover;
+
+    background-position: center;
+
+    height: 100vh;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+}
+
+.menu-background {
+    background-image: url('/images/cafe-menu.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow-y: auto; /* Allows scrolling if content overflows */
+}
+
+/* Footer */
+footer.footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

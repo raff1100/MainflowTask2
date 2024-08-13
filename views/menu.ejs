@@ -1,0 +1,10 @@
+<%- include('header') %>
+<section class="menu-background">
+    <h2>Our Menu</h2>
+    <ul>
+        <% menuItems.forEach(item => { %>
+            <li><strong><%= item.name %></strong> - <%= item.price %> - <%= item.description %></li>
+        <% }); %>
+    </ul>
+</section>
+<%- include('footer') %>
